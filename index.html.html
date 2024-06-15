@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فئة (MASTER)</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            background-color: #1e1e1e;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #2c2c2c;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00f;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f;
+        }
+
+        .tab {
+            cursor: pointer;
+            padding: 15px;
+            background-color: #444;
+            color: #fff;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 1.2em;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .tab:hover {
+            background-color: #555;
+        }
+
+        .tab-content {
+            display: none;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        code {
+            display: block;
+            background-color: #000;
+            color: #fff;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            direction: ltr;
+            position: relative;
+            white-space: pre-wrap;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+
+        .copy-btn:hover {
+            background-color: #218838;
+        }
+
+        .code-title {
+            color: #00f;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f;
+        }
+
+        .sub-heading {
+            color: #00f;
+            font-size: 1.2em;
+            margin-top: 20px;
+            text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>فئة (MASTER)</h1>
+        
+        <div class="tab" onclick="toggleTabContent('game-settings')">إعدادات اللعبه</div>
+        <div id="game-settings" class="tab-content">
+            <p>سوف تظهر لك جميــع التفاصيل لهذا الخيـــار</p>
+        </div>
+
+        <div class="tab" onclick="toggleTabContent('xim-update')">Xim Matrix تحديث</div>
+        <div id="xim-update" class="tab-content">
+            <p>عند الشراء ستتمكن من رؤيه القسم هذا / رابط التحديث</p>
+        </div>
+
+        <div class="tab" onclick="toggleTabContent('peripherals-settings')">Xim Matrix Peripherals Settings</div>
+        <div id="peripherals-settings" class="tab-content">
+            <p>اعداد من سوفت وير الماوس + التطبيق. سوف تظهر لك جميــع التفاصيل لهذا الخيـــار.</p>
+        </div>
+
+        <div class="tab" onclick="toggleTabContent('profile-selection')">أختيار البروفايل والتحكم الصحيح</div>
+        <div id="profile-selection" class="tab-content">
+            <p>عند الشراء ستتمكن من رؤيه الكـــود.</p>
+        </div>
+
+        <div class="tab" onclick="toggleTabContent('code-request')">Code الطلب</div>
+        <div id="code-request" class="tab-content">
+            <p class="code-title">Xim Matrix Config Code</p>
+            <code>
+                >>> XIM MATRIX [VIP-SCRIPT.COM] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+        </div>
+
+        <div class="tab" onclick="toggleTabContent('stability-list')">قائمه الثبات لـ عدد 12 ســلاح من إختيارك - اليك بعض الامــثله</div>
+        <div id="stability-list" class="tab-content">
+            <p class="sub-heading">MCW - MW3 <br> RX - RY</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">BP-50 MW3 <br> RX - RY</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">RAM-9 MW3 <br> RX - RY</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">R99 - APEX <br> RX - RY</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">R-301 APEX <br> RX - RY</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">Flatline - APEX <br> RX - RY</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+        </div>
+
+        <div class="tab" onclick="toggleTabContent('smart-actions')">قائمه جميع الاجرائات الذكيه بما فيها إنواع الاسست مضافه</div>
+        <div id="smart-actions" class="tab-content">
+            <p class="sub-heading">Rotational AA v1</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">نسخ v2</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">Rotational AA "Orbital"</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">نسخ v1</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">نسخ v2</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">نسخ v3</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">Ping - يعطي علامة على العدو</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">Swap Weapon and Recoil Group - تبديل بين بروفايلات الثبات</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">Cancel Reload - يكنسل التعشيق</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">Bunny Hop - قفز متتالي</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">Spam Melee - يدبل طعن</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">Insta Prone - درب شوت</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">Generic Rapid Fire - يحول الأسلحة الفردية إلى أتماتيك</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">Slide Cancel - يكنسل القفز ويزحلق</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">Snaking - حركة الدودة</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+            <p class="sub-heading">Hold Breath ADS - كتم النفس</p>
+            <code>
+                >>> XIM MATRIX [Mappings Binding] START COPY >>><br>
+                عند الشراء ستتمكن من رؤيه الكـــود <br>
+                <<< XIM MATRIX END COPY <<<
+                <button class="copy-btn" onclick="copyCode(this)">نسخ</button>
+            </code>
+        </div>
+
+        <div class="tab" onclick="toggleTabContent('weapons-list')">قائمه الاسلحـه و أفضل الاضافات لها</div>
+        <div id="weapons-list" class="tab-content">
+            <p>عند الشراء ستتمكن من رؤيه القسم هذا</p>
+        </div>
+
+        <div class="tab" onclick="toggleTabContent('tutorials')">قائمه الشروحات والتفعيلات وكل مايخص التعامل مع البروفايل</div>
+        <div id="tutorials" class="tab-content">
+            <p>عند الشراء ستتمكن من رؤيه القسم هذا</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleTabContent(tabId) {
+            var content = document.getElementById(tabId);
+            if (content.classList.contains('active')) {
+                content.classList.remove('active');
+            } else {
+                var contents = document.getElementsByClassName('tab-content');
+                for (var i = 0; i < contents.length; i++) {
+                    contents[i].classList.remove('active');
+                }
+                content.classList.add('active');
+            }
+        }
+
+        function copyCode(button) {
+            var codeElement = button.parentElement;
+            var range = document.createRange();
+            range.selectNodeContents(codeElement);
+            var selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+
+            try {
+                document.execCommand('copy');
+                alert('تم نسخ الكود!');
+            } catch (err) {
+                alert('فشل في نسخ الكود.');
+            }
+
+            selection.removeAllRanges();
+        }
+    </script>
+</body>
+</html>
